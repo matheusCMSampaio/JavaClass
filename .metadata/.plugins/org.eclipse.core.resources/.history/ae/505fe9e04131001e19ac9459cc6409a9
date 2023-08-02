@@ -1,0 +1,39 @@
+package fiap.com.br.main;
+
+import javax.swing.JOptionPane;
+
+import fiap.com.br.bean.Equipe;
+
+public class UsaEquipe {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Equipe grupo;
+		String aux, nome, escolha = "";
+		String[] integrantes;
+		int qtdIntegrantes;
+		
+		do {
+			try {
+				nome = JOptionPane.showInputDialog("Digite o nome da equipe: ");
+				qtdIntegrantes = Integer.parseInt(JOptionPane.showInputDialog("Quantidade de integrantes"));
+				integrantes = new String[qtdIntegrantes];
+				
+				for (int i = 0; i < integrantes.length; i++) {
+					integrantes[i]= JOptionPane.showInputDialog("Integrante "+(i+1)+": ");
+				}
+				grupo = new Equipe(nome, integrantes);
+				
+				grupo.listaEquipe();
+				
+				escolha = JOptionPane.showInputDialog("Deseja continuar: ");
+			} catch (Exception e) {
+				JOptionPane.showMessageDialog(null, e.getMessage());
+			}
+		
+		} while (escolha.equalsIgnoreCase("sim"));
+		
+		JOptionPane.showMessageDialog(null, "Fim de programa");
+	}
+
+}

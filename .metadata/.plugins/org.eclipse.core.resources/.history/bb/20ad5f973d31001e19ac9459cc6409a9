@@ -1,0 +1,39 @@
+package fiap.com.br.bean;
+
+public class Equipe {
+	
+	private String nome;
+	private String[] integrantes;
+	
+	public Equipe() {}
+
+	public Equipe(String nome, String[] integrantes) {
+		setNome(nome);
+		setIntegrantes(integrantes);
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String[] getIntegrantes() {
+		return integrantes;
+	}
+
+	public void setIntegrantes(String[] integrantes) {
+		this.integrantes = integrantes;
+	}
+	
+	public void listaEquipe() {
+		System.out.println("Nome da equipe: "+ this.nome);
+		
+		for(int i =0;i< this.integrantes.length;i++) {
+			System.out.println("Integrante "+(i+1)+": "+ this.integrantes[i]);
+			
+		}
+	}
+}

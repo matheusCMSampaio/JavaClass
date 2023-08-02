@@ -1,0 +1,9 @@
+package fiap.com.br.bean;
+
+public class Equipe {
+
+	public Equipe() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,28 @@
+package fiap.com.br.main;
+
+import javax.swing.JOptionPane;
+
+import fiap.com.br.bean.Equipe;
+
+public class UsaEquipe {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Equipe equipe;
+		String aux, nome, escolha = "";
+		String[] integrantes;
+		int qtdIntegrantes;
+		
+		do {
+			try {
+				
+			} catch (ArrayIndexOutOfBoundsException e) {
+				JOptionPane.showMessageDialog(null, e.getMessage());
+			}
+		
+		} while (escolha.equalsIgnoreCase("sim"));
+		
+		JOptionPane.showMessageDialog(null, "Fim de programa");
+	}
+
+}

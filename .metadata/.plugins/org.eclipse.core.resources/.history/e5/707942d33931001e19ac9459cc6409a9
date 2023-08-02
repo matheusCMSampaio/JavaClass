@@ -1,0 +1,11 @@
+package fiap.com.br.main;
+
+public class Arrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String carros[] = {"carro"};
+		System.out.println(carros[2]);
+	}
+
+}
